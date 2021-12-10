@@ -55,23 +55,24 @@ blanc_list = []
 
 """-----------------------------------------------------------------------"""
 
-print(my_reduce(my_sum, my_list, 5))
+print(my_reduce(my_sum, my_list, 5))  # 29
 print('-' * 100)
-print(my_reduce(factorial, my_list))
+print(my_reduce(factorial, my_list))  # 1080
 print('-' * 100)
-print(my_reduce(biggest, my_list))
+print(my_reduce(biggest, my_list))  # 9
 print('-' * 100)
-print(my_reduce(my_sum, python_list, 'I study '))
+print(my_reduce(my_sum, python_list, 'I study '))  # I study Python
 print('-' * 100)
-print(my_reduce(lambda a, b: a + b, python_list))
+print(my_reduce(lambda a, b: a + b, python_list))  # Python
 print('-' * 100)
-print(my_reduce(lambda a, b: a if a > b else b, my_list, 18))
+print(my_reduce(lambda a, b: a if a > b else b, my_list, 18))  # 18
 print('-' * 100)
-print(my_reduce(lambda a, b: a if a > b else b, my_tuple_list))
+print(my_reduce(lambda a, b: a if a > b else b, my_tuple_list))  # 10
 print('-' * 100)
-print(my_reduce(lambda a, b: a + b, jast_a))
+print(my_reduce(lambda a, b: a + b, jast_a))  # A
 print('-' * 100)
-print(my_reduce(lambda a, b: a if a > b else b, blanc_list))
+print(my_reduce(lambda a, b: a if a > b else b, blanc_list))  # TypeError: reduce() of empty sequence with no
+                                                              # initial value
 
 
 
